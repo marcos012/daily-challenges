@@ -3,14 +3,15 @@ package challanges
 import org.junit.Assert.assertEquals
 import org.junit.Test
 
-class Challange00Test {
+class Challange01Test {
 
-    val challange00 = Challange00()
+    val challange = Challange01()
 
     @Test
-    fun `should return whether any two numbers from the list add up k`() {
-        val list = listOf<Long>(10, 15, 3, 7)
-        val expectedReturn = listOf(true, false, false, true)
-        assertEquals(expectedReturn, challange00.checkSum(list, 17))
+    fun `should return new array is the product of all the numbers in the original array except the one at i`() {
+        val list = listOf(1, 2, 3, 4, 5)
+        val expectedReturn = listOf(120, 60, 40, 30, 24)
+
+        assertEquals(expectedReturn, challange.checkProduct(list))
     }
 }
