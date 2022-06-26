@@ -6,17 +6,15 @@ package challenges
  * For example, car(cons(3, 4)) returns 3, and cdr(cons(3, 4)) returns 4.
  * */
 class Challenge03 {
-    fun cons(a: Int, b: Int): String {
-        val sb = StringBuilder()
-
-        return sb.append(a, b).toString()
+    fun cons(a: Int, b: Int): Pair<Int, Int> {
+        return Pair(a, b)
     }
 
-    fun car(str: String): Int {
-        return Integer.parseInt(str.first().toString())
+    fun car(pair: Pair<Int, Int>): Int {
+        return pair.first
     }
 
-    fun cdr(str: String): Int {
-        return Integer.parseInt(str.last().toString())
+    fun cdr(pair: Pair<Int, Int>): Int {
+        return pair.second
     }
 }
