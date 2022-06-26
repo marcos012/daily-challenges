@@ -1,2 +1,2 @@
-# daily-challanges
-Daily Challanges from https://www.dailycodingproblem.com/
+# daily-challenges
+Daily Challenges from https://www.dailycodingproblem.com/
