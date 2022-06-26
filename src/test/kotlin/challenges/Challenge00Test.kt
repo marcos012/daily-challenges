@@ -1,17 +1,17 @@
-package challanges
+package challenges
 
 import org.junit.Assert.assertEquals
 import org.junit.Test
 
-class Challange00Test {
+class Challenge00Test {
 
-    val challange00 = Challange00()
+    private val challenge = Challenge00()
 
     @Test
     fun `should return whether any two numbers from the list add up k`() {
         val list = listOf<Long>(10, 15, 3, 7)
         val expectedReturn = listOf(true, false, false, true)
 
-        assertEquals(expectedReturn, challange00.checkSum(list, 17))
+        assertEquals(expectedReturn, challenge.checkSum(list, 17))
     }
 }

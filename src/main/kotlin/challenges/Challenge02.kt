@@ -1,4 +1,4 @@
-package challanges
+package challenges
 
 /**
  * Given an array of integers, find the first missing positive integer in
@@ -6,7 +6,7 @@ package challanges
  * integer that does not exist in the array. The array can contain
  * duplicates and negative numbers as well.
  * */
-class Challange03 {
+class Challenge02 {
     fun checkLowestPositive(list: List<Int>): Int {
          var minValue = list.minOf { min -> if (min > 0) min else 1 }
 
