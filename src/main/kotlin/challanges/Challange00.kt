@@ -6,7 +6,7 @@ package challanges
  * Bonus: Can you do this in one pass?
  * */
 class Challange00 {
-    fun checkSum(list: List<Long>, k: Long): Any {
+    fun checkSum(list: List<Long>, k: Long): List<Boolean> {
         return list.map {
             list.contains(k - it)
         }
